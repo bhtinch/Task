@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6242CDDD25AF9BAE007DACFA /* TaskListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6242CDDC25AF9BAE007DACFA /* TaskListTableViewController.swift */; };
+		6242CDE025AF9BC6007DACFA /* TaskDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6242CDDF25AF9BC6007DACFA /* TaskDetailViewController.swift */; };
+		6242CDE325AF9BD2007DACFA /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6242CDE225AF9BD2007DACFA /* Task.swift */; };
+		6242CDE625AF9BD9007DACFA /* TaskController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6242CDE525AF9BD9007DACFA /* TaskController.swift */; };
+		6242CDEB25AFB113007DACFA /* TaskListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6242CDEA25AFB113007DACFA /* TaskListTableViewCell.swift */; };
 		7EC8F555259B5AAD003641BD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EC8F554259B5AAD003641BD /* AppDelegate.swift */; };
 		7EC8F557259B5AAD003641BD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EC8F556259B5AAD003641BD /* SceneDelegate.swift */; };
 		7EC8F55C259B5AAD003641BD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7EC8F55A259B5AAD003641BD /* Main.storyboard */; };
@@ -15,6 +20,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6242CDDC25AF9BAE007DACFA /* TaskListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskListTableViewController.swift; sourceTree = "<group>"; };
+		6242CDDF25AF9BC6007DACFA /* TaskDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskDetailViewController.swift; sourceTree = "<group>"; };
+		6242CDE225AF9BD2007DACFA /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
+		6242CDE525AF9BD9007DACFA /* TaskController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskController.swift; sourceTree = "<group>"; };
+		6242CDEA25AFB113007DACFA /* TaskListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskListTableViewCell.swift; sourceTree = "<group>"; };
 		7EC8F551259B5AAD003641BD /* Task.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Task.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7EC8F554259B5AAD003641BD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7EC8F556259B5AAD003641BD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -47,6 +57,7 @@
 			isa = PBXGroup;
 			children = (
 				7EC8F553259B5AAD003641BD /* Task */,
+				7EC8F569259B5AC4003641BD /* Resources */,
 				7EC8F552259B5AAD003641BD /* Products */,
 			);
 			sourceTree = "<group>";
@@ -63,7 +74,11 @@
 			isa = PBXGroup;
 			children = (
 				7E3C189A259CFBDC00CDB7FA /* Views */,
-				7EC8F569259B5AC4003641BD /* Resources */,
+				6242CDE225AF9BD2007DACFA /* Task.swift */,
+				6242CDE525AF9BD9007DACFA /* TaskController.swift */,
+				6242CDDC25AF9BAE007DACFA /* TaskListTableViewController.swift */,
+				6242CDDF25AF9BC6007DACFA /* TaskDetailViewController.swift */,
+				6242CDEA25AFB113007DACFA /* TaskListTableViewCell.swift */,
 			);
 			path = Task;
 			sourceTree = "<group>";
@@ -158,8 +173,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6242CDDD25AF9BAE007DACFA /* TaskListTableViewController.swift in Sources */,
 				7EC8F555259B5AAD003641BD /* AppDelegate.swift in Sources */,
+				6242CDE325AF9BD2007DACFA /* Task.swift in Sources */,
+				6242CDE025AF9BC6007DACFA /* TaskDetailViewController.swift in Sources */,
+				6242CDE625AF9BD9007DACFA /* TaskController.swift in Sources */,
 				7EC8F557259B5AAD003641BD /* SceneDelegate.swift in Sources */,
+				6242CDEB25AFB113007DACFA /* TaskListTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -236,6 +256,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = Task/Resources/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -291,6 +312,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = Task/Resources/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
@@ -308,7 +330,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = KMTDCPCY5V;
-				INFOPLIST_FILE = Task/Resources/Info.plist;
+				INFOPLIST_FILE = Resources/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -328,7 +350,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = KMTDCPCY5V;
-				INFOPLIST_FILE = Task/Resources/Info.plist;
+				INFOPLIST_FILE = Resources/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
